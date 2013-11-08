@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+  <title>Stupeflix Tasks.js</title>
+</head>
+<body>
+  <script src="../src/underscore.js"></script>
+  <script src="../src/stupeflix-tasks.js"></script>
+  <script>
+
+    var tasks = new Stupeflix.TaskManager({
+      api_key: "YOUR-API-KEY" // Do not forget to add your domain in the authorized domain list of your key.
+    });
+
+    var task = tasks.create({
+      task_name: "video.reverse",
+      url: "http://assets.stupeflix.com/apiusecase/diving.mp4"
+    }).then(function(result){
+      // on Success
+    }, function(response){
+      // on Error
+    });
+
+  </script>
+</body>
+</html>
