@@ -319,7 +319,7 @@
         this.mark('success', serverData.result);
         
       }else{
-        this.fire('progress', status);
+        this.fire('progress', status, serverData);
       }
     },
     
