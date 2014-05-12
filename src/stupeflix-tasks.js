@@ -316,10 +316,10 @@
 
       }else if(status === "success"){
         this._manager._removeListener(this);
-        this.mark('success', serverData.result);
+        this.mark('success', serverData);
         
       }else{
-        this.fire('progress', status);
+        this.fire('progress', serverData);
       }
     },
     
