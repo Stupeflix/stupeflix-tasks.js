@@ -334,7 +334,7 @@
 
   var TaskManager = Stupeflix.TaskManager = function(options){
     this.options = _.extend({
-      endpoint: "https://dragon.stupeflix.com/v1/",
+      endpoint: "https://dragon.stupeflix.com/v2/",
       update_delay: 2000,
       retry_delay: 20 * 1000,
       metas: false
